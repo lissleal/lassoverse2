@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', Courier, monospace;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+// Colores del documento
+
+$color_fondo_claro: #FFCF9C;
+$color_fondo_terceario:  #B96D40;
+$color_letras: white;
+$color_fondo_oscuro: rgb(35,57,91);
+$color_principal: rgb(61, 145, 117);
+$color_secundario: #ca054d;

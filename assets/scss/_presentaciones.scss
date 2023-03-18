@@ -1,0 +1,25 @@
+.contenidopresentacion {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: stretch;
+    min-height: 50vh;
+    padding: 30px;
+    gap: 20px;   
+    
+    .proximasfechas {
+      border: 20px;
+      text-align: center;
+
+      td {
+        padding: 0 20px;
+    }
+    }
+}
+
+.video-youtube {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+
+

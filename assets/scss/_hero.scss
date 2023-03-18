@@ -1,0 +1,14 @@
+.fotoprincipal {
+    background-image: url(../../img/lassochaquetahombreras.jpg);
+    background-size: cover;
+    background-position: center top;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 60vh;
+    
+    .fototitulo{
+        padding: 15px 40px;
+        background-color: $color_letras; 
+    }
+}

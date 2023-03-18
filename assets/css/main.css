@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Comfortaa', Courier, monospace; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+.menu_principal {
+  background-color: #B96D40; }
+  .menu_principal a {
+    color: white; }
+
+.slide-in-fwd-left {
+  -webkit-animation: slide-in-fwd-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-fwd-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes slide-in-fwd-left {
+  0% {
+    -webkit-transform: translateZ(-1400px) translateX(-1000px);
+    transform: translateZ(-1400px) translateX(-1000px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0) translateX(0);
+    transform: translateZ(0) translateX(0);
+    opacity: 1; } }
+
+@keyframes slide-in-fwd-left {
+  0% {
+    -webkit-transform: translateZ(-1400px) translateX(-1000px);
+    transform: translateZ(-1400px) translateX(-1000px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0) translateX(0);
+    transform: translateZ(0) translateX(0);
+    opacity: 1; } }
+
+.slide-in-fwd-right {
+  -webkit-animation: slide-in-fwd-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s both;
+  animation: slide-in-fwd-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s both; }
+
+@-webkit-keyframes slide-in-fwd-right {
+  0% {
+    -webkit-transform: translateZ(-1400px) translateX(1000px);
+    transform: translateZ(-1400px) translateX(1000px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0) translateX(0);
+    transform: translateZ(0) translateX(0);
+    opacity: 1; } }
+
+@keyframes slide-in-fwd-right {
+  0% {
+    -webkit-transform: translateZ(-1400px) translateX(1000px);
+    transform: translateZ(-1400px) translateX(1000px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0) translateX(0);
+    transform: translateZ(0) translateX(0);
+    opacity: 1; } }
+
+.imagendivision {
+  background: #23395b;
+  background: linear-gradient(131deg, #23395b 6%, #55d6be 26%, #ca054d 57%, #b96d40 80%, #ffcf9c 100%);
+  height: 100px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .imagendivision .titulo {
+    padding: 10px 20px;
+    color: white; }
+
+.tracking-in-expand {
+  -webkit-animation: tracking-in-expand 1.2s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-expand 1.2s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
+
+.contenido {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+  text-align: center;
+  gap: 10px; }
+
+.fondo_claro {
+  background-color: #FFCF9C;
+  color: #23395b; }
+
+.fondo_oscuro {
+  background-color: #3d9175;
+  color: white; }
+
+.vibrate-1 {
+  -webkit-animation: vibrate-1 2s linear infinite both;
+  animation: vibrate-1 2s linear infinite both; }
+
+@-webkit-keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0); }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px); }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px); }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px); }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px); }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0); } }
+
+@keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0); }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px); }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px); }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px); }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px); }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0); } }
+
+.fotoprincipal {
+  background-image: url(../../img/lassochaquetahombreras.jpg);
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 60vh; }
+  .fotoprincipal .fototitulo {
+    padding: 15px 40px;
+    background-color: white; }
+
+.grid_sobremi {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "foto1 foto1 texto1" "foto2 texto2 foto3";
+  padding: 20px 60px;
+  gap: 20px;
+  align-items: stretch; }
+  .grid_sobremi .imagen1 {
+    grid-area: foto1;
+    background-image: url(../../img/lassoguitarra.jpg);
+    background-size: cover;
+    background-position: top;
+    min-height: 50vh; }
+  .grid_sobremi .imagen2 {
+    grid-area: foto2;
+    background-image: url(../../img/lassoenescenario.avif);
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh; }
+  .grid_sobremi .imagen3 {
+    grid-area: foto3;
+    background-image: url(../../img/lassoalfombra.avif);
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh; }
+  .grid_sobremi .texto1 {
+    grid-area: texto1; }
+  .grid_sobremi .texto2 {
+    grid-area: texto2; }
+  .grid_sobremi .texto3 {
+    grid-area: texto3; }
+
+.contenidopresentacion {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: stretch;
+  min-height: 50vh;
+  padding: 30px;
+  gap: 20px; }
+  .contenidopresentacion .proximasfechas {
+    border: 20px;
+    text-align: center; }
+    .contenidopresentacion .proximasfechas td {
+      padding: 0 20px; }
+
+.video-youtube {
+  width: 100%;
+  aspect-ratio: 16/9; }
+
+footer {
+  background-color: #ca054d;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.fade-in-fwd {
+  -webkit-animation: fade-in-fwd 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
+  animation: fade-in-fwd 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both; }
+
+@-webkit-keyframes fade-in-fwd {
+  0% {
+    -webkit-transform: translateZ(-80px);
+    transform: translateZ(-80px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }
+
+@keyframes fade-in-fwd {
+  0% {
+    -webkit-transform: translateZ(-80px);
+    transform: translateZ(-80px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }
+
+.agrandarse {
+  transition: 1s; }
+
+.agrandarse:hover {
+  scale: 1.05; }
+
+@media screen and (max-width: 1200px) {
+  .grid_sobremi {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "foto1 texto1" "foto3 foto3" "foto2 texto2";
+    padding: 20px 10px;
+    gap: 20px; } }
+
+@media screen and (max-width: 768px) {
+  .grid_sobremi {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "foto1" "texto1" "foto2" "texto2" "foto3";
+    padding: 20px 10px;
+    gap: 20px; }
+  .contenidopresentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px 0;
+    gap: 20px; } }
