@@ -20,7 +20,7 @@
       crossorigin="anonymous"
     />
     <!-- CSS -->
-    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/main.css" />
     <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
 
@@ -86,7 +86,9 @@
     <!-- Contenido -->
     <main class="contenido fondo_claro">
       <p>
-        Comunicate con nuestro equipo de manera fácil y rápida. Ya sea para contrataciones, preguntas, sugerencias o cualquier otra consulta, estamos aquí para escucharte. 
+        Comunicate con nuestro equipo de manera fácil y rápida. Ya sea para
+        contrataciones, preguntas, sugerencias o cualquier otra consulta,
+        estamos aquí para escucharte.
       </p>
       <div class="row">
         <form class="col-lg-6 col-md-12 fondo_oscuro">
@@ -112,6 +114,17 @@
               placeholder="name@example.com"
             />
           </div>
+          <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupSelect01"
+              >Motivo del Mensaje</label
+            >
+            <select class="form-select" id="inputGroupSelect01">
+              <option selected>Selecciona</option>
+              <option value="1">Reserva de Concierto</option>
+              <option value="2">Colaboración</option>
+              <option value="3">Pregunta General</option>
+            </select>
+          </div>
           <div class="mb-2">
             <label for="exampleFormControlTextarea1" class="form-label"
               >En que podemos ayudarte</label
@@ -123,6 +136,19 @@
               placeholder="Tu mensaje aqui"
             ></textarea>
           </div>
+
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="defaultCheck1"
+            />
+            <label class="form-check-label" for="defaultCheck1">
+              Quiero suscribirme al boletín
+            </label>
+          </div>
+
           <button type="submit" class="btn btn-dark">Submit</button>
         </form>
         <div class="col-lg-6 col-md-12 mt-3">
@@ -133,7 +159,6 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
-          <!-- <img class="img" src="../img/lassodepie.jpeg" alt=""> -->
         </div>
       </div>
     </main>

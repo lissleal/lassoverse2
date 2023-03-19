@@ -9,6 +9,9 @@ a {
   text-decoration: none;
   color: white; }
 
+.album_canciones {
+  font-size: xx-small; }
+
 .menu_principal {
   background-color: #B96D40; }
   .menu_principal a {
@@ -158,16 +161,17 @@ a {
     transform: translate(0); } }
 
 .fotoprincipal {
-  background-image: url(../../img/lassochaquetahombreras.jpg);
+  background-image: url(../../img/portada.jpg);
   background-size: cover;
   background-position: center top;
   display: flex;
   justify-content: center;
   align-items: end;
-  height: 60vh; }
+  height: 90vh; }
   .fotoprincipal .fototitulo {
     padding: 15px 40px;
-    background-color: white; }
+    background-color: rgba(255, 255, 255, 0.481);
+    border-radius: 10px; }
 
 .grid_sobremi {
   width: 100%;
@@ -180,19 +184,19 @@ a {
   align-items: stretch; }
   .grid_sobremi .imagen1 {
     grid-area: foto1;
-    background-image: url(../../img/lassoguitarra.jpg);
+    background-image: url(../../img/cantante2.jpg);
     background-size: cover;
     background-position: top;
     min-height: 50vh; }
   .grid_sobremi .imagen2 {
     grid-area: foto2;
-    background-image: url(../../img/lassoenescenario.avif);
+    background-image: url(../../img/letras.jpg);
     background-size: cover;
     background-position: center;
     min-height: 50vh; }
   .grid_sobremi .imagen3 {
     grid-area: foto3;
-    background-image: url(../../img/lassoalfombra.avif);
+    background-image: url(../../img/traje.jpg);
     background-size: cover;
     background-position: center;
     min-height: 50vh; }
@@ -202,6 +206,38 @@ a {
     grid-area: texto2; }
   .grid_sobremi .texto3 {
     grid-area: texto3; }
+
+.grid_sobremi2 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "foto4 foto4 texto3" "foto5 texto4 foto6";
+  padding: 20px 60px;
+  gap: 20px;
+  align-items: stretch; }
+  .grid_sobremi2 .imagen4 {
+    grid-area: foto4;
+    background-image: url(../../img/colab.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh; }
+  .grid_sobremi2 .imagen5 {
+    grid-area: foto5;
+    background-image: url(../../img/ojos2.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh; }
+  .grid_sobremi2 .imagen6 {
+    grid-area: foto6;
+    background-image: url(../../img/lasso.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh; }
+  .grid_sobremi2 .texto3 {
+    grid-area: texto3; }
+  .grid_sobremi2 .texto3 {
+    grid-area: texto4; }
 
 .contenidopresentacion {
   display: grid;
@@ -266,6 +302,13 @@ footer {
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "foto1 texto1" "foto3 foto3" "foto2 texto2";
     padding: 20px 10px;
+    gap: 20px; }
+  .grid_sobremi2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "foto4 texto4" "foto5 foto5" "foto6 texto6";
+    padding: 20px 10px;
     gap: 20px; } }
 
 @media screen and (max-width: 768px) {
@@ -274,6 +317,13 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "foto1" "texto1" "foto2" "texto2" "foto3";
+    padding: 20px 10px;
+    gap: 20px; }
+  .grid_sobremi2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "foto4" "texto4" "foto5" "texto5" "foto6";
     padding: 20px 10px;
     gap: 20px; }
   .contenidopresentacion {

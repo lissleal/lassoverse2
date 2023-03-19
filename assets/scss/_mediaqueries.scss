@@ -11,6 +11,18 @@
         gap: 20px;
         }
         
+    .grid_sobremi2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "foto4 texto4"
+        "foto5 foto5"
+        "foto6 texto6";
+        padding: 20px 10px;
+        gap: 20px;
+        }
+        
     }
     @media screen and (max-width: 768px){
         .grid_sobremi {
@@ -26,6 +38,20 @@
             padding: 20px 10px;
             gap: 20px;
             }
+
+            .grid_sobremi2 {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                grid-template-areas: 
+                "foto4"
+                "texto4"
+                "foto5"
+                "texto5"
+                "foto6";
+                padding: 20px 10px;
+                gap: 20px;
+                }
             .contenidopresentacion {
               display: flex;
               flex-direction: column;

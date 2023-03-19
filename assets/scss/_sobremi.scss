@@ -11,21 +11,21 @@
     align-items: stretch;
     .imagen1 {
         grid-area: foto1;
-        background-image: url(../../img/lassoguitarra.jpg);
+        background-image: url(../../img/cantante2.jpg);
         background-size: cover;
         background-position: top;
         min-height: 50vh;
     }
     .imagen2 {
         grid-area: foto2;
-        background-image: url(../../img/lassoenescenario.avif);
+        background-image: url(../../img/letras.jpg);
         background-size: cover;
         background-position: center;
         min-height: 50vh;
     }
     .imagen3 {
         grid-area: foto3;
-        background-image: url(../../img/lassoalfombra.avif);
+        background-image: url(../../img/traje.jpg);
         background-size: cover;
         background-position: center;
         min-height: 50vh;
@@ -38,6 +38,47 @@
     }
     .texto3 {
         grid-area: texto3;
+    }
+}
+.grid_sobremi2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "foto4 foto4 texto3"
+    "foto5 texto4 foto6";
+    padding: 20px 60px;
+    gap: 20px;
+    align-items: stretch;
+    
+    .imagen4 {
+        grid-area: foto4;
+        background-image: url(../../img/colab.jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 50vh;
+    }
+    .imagen5 {
+        grid-area: foto5;
+        background-image: url(../../img/ojos2.jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 50vh;
+    }
+    .imagen6 {
+        grid-area: foto6;
+        background-image: url(../../img/lasso.jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 50vh;
+    }
+    
+    .texto3 {
+        grid-area: texto3;
+    }
+    .texto3 {
+        grid-area: texto4;
     }
 }
 
