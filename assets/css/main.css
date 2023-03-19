@@ -97,7 +97,7 @@ a {
     opacity: 1; } }
 
 .contenido {
-  padding: 30px;
+  padding: 30px 80px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -211,10 +211,10 @@ a {
   padding: 30px;
   gap: 20px; }
   .contenidopresentacion .proximasfechas {
-    border: 20px;
     text-align: center; }
-    .contenidopresentacion .proximasfechas td {
-      padding: 0 20px; }
+    .contenidopresentacion .proximasfechas td, .contenidopresentacion .proximasfechas th {
+      padding: 0 20px;
+      border: solid #FFCF9C 1px; }
 
 .video-youtube {
   width: 100%;

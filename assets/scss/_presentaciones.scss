@@ -7,14 +7,19 @@
     gap: 20px;   
     
     .proximasfechas {
-      border: 20px;
+      // border: solid white 20px;
       text-align: center;
 
-      td {
+
+      td, th {
         padding: 0 20px;
+        border: solid $color_fondo_claro 1px;
+
     }
     }
 }
+
+
 
 .video-youtube {
   width: 100%;
