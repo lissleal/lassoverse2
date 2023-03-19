@@ -11,10 +11,14 @@ a {
     text-decoration: none;
     color: white;
 }
-
-.album_canciones {
-    font-size: xx-small;
+@mixin flex-col-center {
+    display: flex;
+    flex-direction: column;
 }
+
+// .album_canciones {
+//     font-size: xx-small;
+// }
 
 // Colores del documento
 

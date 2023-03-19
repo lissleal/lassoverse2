@@ -9,9 +9,6 @@ a {
   text-decoration: none;
   color: white; }
 
-.album_canciones {
-  font-size: xx-small; }
-
 .menu_principal {
   background-color: #B96D40; }
   .menu_principal a {
@@ -100,11 +97,10 @@ a {
     opacity: 1; } }
 
 .contenido {
-  padding: 30px 80px;
+  padding: 10px 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: stretch;
+  justify-content: center;
   text-align: center;
   gap: 10px; }
 
@@ -184,21 +180,21 @@ a {
   align-items: stretch; }
   .grid_sobremi .imagen1 {
     grid-area: foto1;
-    background-image: url(../../img/cantante2.jpg);
+    background-image: url(../../img/lassocami.png);
     background-size: cover;
     background-position: top;
     min-height: 50vh; }
   .grid_sobremi .imagen2 {
     grid-area: foto2;
-    background-image: url(../../img/letras.jpg);
+    background-image: url(../../img/lasso.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: top;
     min-height: 50vh; }
   .grid_sobremi .imagen3 {
     grid-area: foto3;
-    background-image: url(../../img/traje.jpg);
+    background-image: url(../../img/ojos2.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: top;
     min-height: 50vh; }
   .grid_sobremi .texto1 {
     grid-area: texto1; }
@@ -220,19 +216,19 @@ a {
     grid-area: foto4;
     background-image: url(../../img/colab.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: top;
     min-height: 50vh; }
   .grid_sobremi2 .imagen5 {
     grid-area: foto5;
-    background-image: url(../../img/ojos2.jpg);
+    background-image: url(../../img/cantante2.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: top;
     min-height: 50vh; }
   .grid_sobremi2 .imagen6 {
     grid-area: foto6;
-    background-image: url(../../img/lasso.jpg);
+    background-image: url(../../img/letras.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: top;
     min-height: 50vh; }
   .grid_sobremi2 .texto3 {
     grid-area: texto3; }
@@ -264,6 +260,17 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+
+form {
+  display: flex;
+  flex-direction: column; }
+
+.tarjetita {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px; }
 
 .fade-in-fwd {
   -webkit-animation: fade-in-fwd 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;

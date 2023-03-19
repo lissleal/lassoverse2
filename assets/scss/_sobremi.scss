@@ -11,23 +11,23 @@
     align-items: stretch;
     .imagen1 {
         grid-area: foto1;
-        background-image: url(../../img/cantante2.jpg);
+        background-image: url(../../img/lassocami.png);
         background-size: cover;
         background-position: top;
         min-height: 50vh;
     }
     .imagen2 {
         grid-area: foto2;
-        background-image: url(../../img/letras.jpg);
+        background-image: url(../../img/lasso.jpg);
         background-size: cover;
-        background-position: center;
+        background-position: top;
         min-height: 50vh;
     }
     .imagen3 {
         grid-area: foto3;
-        background-image: url(../../img/traje.jpg);
+        background-image: url(../../img/ojos2.jpg);
         background-size: cover;
-        background-position: center;
+        background-position: top;
         min-height: 50vh;
     }
     .texto1 {
@@ -56,21 +56,21 @@
         grid-area: foto4;
         background-image: url(../../img/colab.jpg);
         background-size: cover;
-        background-position: center;
+        background-position: top;
         min-height: 50vh;
     }
     .imagen5 {
         grid-area: foto5;
-        background-image: url(../../img/ojos2.jpg);
+        background-image: url(../../img/cantante2.jpg);
         background-size: cover;
-        background-position: center;
+        background-position: top;
         min-height: 50vh;
     }
     .imagen6 {
         grid-area: foto6;
-        background-image: url(../../img/lasso.jpg);
+        background-image: url(../../img/letras.jpg);
         background-size: cover;
-        background-position: center;
+        background-position: top;
         min-height: 50vh;
     }
     

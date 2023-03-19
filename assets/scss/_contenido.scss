@@ -1,9 +1,9 @@
 .contenido {
-    padding: 30px 80px;
+    padding: 10px 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: stretch;
+    justify-content: center;
+    // align-items: stretch;
     text-align: center;
     gap: 10px;
 }
@@ -15,6 +15,8 @@
     background-color: rgb(61, 145, 117); 
     color: white;
 }
+
+
 
 // ANIMACION RESALTAR CONTENIDO
 .vibrate-1 {
