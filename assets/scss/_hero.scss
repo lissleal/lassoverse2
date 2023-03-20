@@ -2,14 +2,18 @@
     background-image: url(../../img/portada.jpg);
     background-size: cover;
     background-position: center top;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    height: 90vh;
+    @include flex-col-center;
+    justify-content: end;
+    height: 85vh;
     
     .fototitulo{
-        padding: 15px 40px;
-        background-color: rgba(255, 255, 255, 0.481);
-        border-radius: 10px;
+        font-size: 100px;
+        color: $color_fondo_oscuro;
+        font-weight: bold;    
+    } 
+    p {
+        background-color: $color_letras;
+        border-radius: 10px; 
+        padding: 10px 20px;
     }
 }

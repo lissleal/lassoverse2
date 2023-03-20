@@ -1,23 +1,36 @@
-.contenidopresentacion {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    align-items: stretch;
-    min-height: 50vh;
-    padding: 30px;
-    gap: 20px;   
-    
-    .proximasfechas {
-      // border: solid white 20px;
-      text-align: center;
-
-
-      td, th {
-        padding: 0 20px;
-        border: solid $color_fondo_claro 1px;
-
-    }
-    }
+.fondoimagen {
+  background-image: url(../../img/fondo3.jpg);
+  background-size: cover;
+  background-position: center;
 }
+
+.contenidopresentacion {    
+    .proximasfechas {
+      text-align: center;
+.itemfecha {
+  
+      td, th {
+        padding: 30px;
+        color: $color_fondo_oscuro;
+        font-size: 20px;
+          
+        .ocultar{
+            color: transparent;
+            background-color: transparent;
+          padding: 20px;
+          border-radius: 10px;      
+          }  
+        .ocultar:hover {
+          color: $color_letras;  
+          background-color: $color_principal;
+        }
+        }
+      }
+    }
+  }
+
+
+
 
 
 

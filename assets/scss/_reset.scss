@@ -14,13 +14,18 @@ a {
 @mixin flex-col-center {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-// .album_canciones {
-//     font-size: xx-small;
-// }
 
-// Colores del documento
+
 
 $color_fondo_claro: #FFCF9C;
 $color_fondo_terceario:  #B96D40;

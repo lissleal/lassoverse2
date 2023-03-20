@@ -161,13 +161,19 @@ a {
   background-size: cover;
   background-position: center top;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: end;
-  height: 90vh; }
+  align-items: center;
+  justify-content: end;
+  height: 85vh; }
   .fotoprincipal .fototitulo {
-    padding: 15px 40px;
-    background-color: rgba(255, 255, 255, 0.481);
-    border-radius: 10px; }
+    font-size: 100px;
+    color: #23395b;
+    font-weight: bold; }
+  .fotoprincipal p {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 20px; }
 
 .grid_sobremi {
   width: 100%;
@@ -235,18 +241,25 @@ a {
   .grid_sobremi2 .texto3 {
     grid-area: texto4; }
 
-.contenidopresentacion {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  align-items: stretch;
-  min-height: 50vh;
-  padding: 30px;
-  gap: 20px; }
-  .contenidopresentacion .proximasfechas {
-    text-align: center; }
-    .contenidopresentacion .proximasfechas td, .contenidopresentacion .proximasfechas th {
-      padding: 0 20px;
-      border: solid #FFCF9C 1px; }
+.fondoimagen {
+  background-image: url(../../img/fondo3.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.contenidopresentacion .proximasfechas {
+  text-align: center; }
+  .contenidopresentacion .proximasfechas .itemfecha td, .contenidopresentacion .proximasfechas .itemfecha th {
+    padding: 30px;
+    color: #23395b;
+    font-size: 20px; }
+    .contenidopresentacion .proximasfechas .itemfecha td .ocultar, .contenidopresentacion .proximasfechas .itemfecha th .ocultar {
+      color: transparent;
+      background-color: transparent;
+      padding: 20px;
+      border-radius: 10px; }
+    .contenidopresentacion .proximasfechas .itemfecha td .ocultar:hover, .contenidopresentacion .proximasfechas .itemfecha th .ocultar:hover {
+      color: white;
+      background-color: #3d9175; }
 
 .video-youtube {
   width: 100%;
@@ -263,7 +276,9 @@ footer {
 
 form {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 .tarjetita {
   display: flex;
@@ -303,6 +318,9 @@ form {
   scale: 1.05; }
 
 @media screen and (max-width: 1200px) {
+  .slide-in-fwd-right {
+    -webkit-animation: none;
+    animation: none; }
   .grid_sobremi {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -316,9 +334,16 @@ form {
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "foto4 texto4" "foto5 foto5" "foto6 texto6";
     padding: 20px 10px;
-    gap: 20px; } }
+    gap: 20px; }
+  .fotoprincipal {
+    height: 60vh; }
+    .fotoprincipal .fototitulo {
+      font-size: 50px; } }
 
 @media screen and (max-width: 768px) {
+  .slide-in-fwd-right {
+    -webkit-animation: none;
+    animation: none; }
   .grid_sobremi {
     display: grid;
     grid-template-columns: 1fr;
@@ -338,4 +363,7 @@ form {
     flex-direction: column;
     justify-content: space-around;
     padding: 30px 0;
-    gap: 20px; } }
+    gap: 20px; }
+  .fotoprincipal .fototitulo {
+    font-size: 50px;
+    color: white; } }
