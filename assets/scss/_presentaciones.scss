@@ -1,43 +1,41 @@
-.fondoimagen {
-  background-image: url(../../img/fondo3.jpg);
+.contenido {
+  background-image: url(../../img/fondo4.jpg);
   background-size: cover;
-  background-position: center;
-}
+  @include flex-col-center;
 
-.contenidopresentacion {    
+  .texto {
+    @extend %textos;
+  }
+
+  h2 {
+    @extend %titulos;
+
+  }
+
+  .contenidopresentacion { 
+    @include gridsimple;
+
     .proximasfechas {
-      text-align: center;
-.itemfecha {
-  
-      td, th {
-        padding: 30px;
-        color: $color_fondo_oscuro;
-        font-size: 20px;
-          
-        .ocultar{
-            color: transparent;
-            background-color: transparent;
-          padding: 20px;
-          border-radius: 10px;      
-          }  
-        .ocultar:hover {
-          color: $color_letras;  
-          background-color: $color_principal;
-        }
+        text-align: center;
+        @include estilo_oscuro;
+
+        
+      .itemfecha {
+        
+            td, th {
+              padding: 30px;
+              font-size: 20px;
+                
+          }
         }
       }
     }
-  }
 
-
-
-
-
-
-.video-youtube {
-  width: 100%;
-  aspect-ratio: 16/9;
 }
+
+
+
+
 
 
 

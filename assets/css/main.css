@@ -9,6 +9,15 @@ a {
   text-decoration: none;
   color: white; }
 
+.contenido_index .titulo_index, .contenido_discos h2, .contenido_sobremi h2, .contenido h2, .contenido_contacto h2 {
+  color: #3d9175;
+  background-color: white;
+  padding: 0 10px; }
+
+.contenido_discos .texto, .contenido_sobremi p, .contenido .texto, .contenido_contacto p {
+  padding: 20px 50px;
+  text-align: center; }
+
 .menu_principal {
   background-color: #B96D40; }
   .menu_principal a {
@@ -68,6 +77,7 @@ a {
   height: 100px;
   background-size: cover;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center; }
   .imagendivision .titulo {
@@ -96,13 +106,23 @@ a {
   100% {
     opacity: 1; } }
 
-.contenido {
-  padding: 10px 20px;
+.contenido_index {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
+  align-items: center;
+  background-color: #3d9175;
+  color: white;
+  padding: 20px;
   gap: 10px; }
+
+.contenido_discos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFCF9C;
+  color: #23395b; }
 
 .fondo_claro {
   background-color: #FFCF9C;
@@ -175,95 +195,99 @@ a {
     border-radius: 10px;
     padding: 10px 20px; }
 
-.grid_sobremi {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "foto1 foto1 texto1" "foto2 texto2 foto3";
-  padding: 20px 60px;
-  gap: 20px;
-  align-items: stretch; }
-  .grid_sobremi .imagen1 {
-    grid-area: foto1;
-    background-image: url(../../img/lassocami.png);
+.contenido_sobremi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFCF9C;
+  color: #23395b; }
+  .contenido_sobremi .grid_sobremi .imagen1, .contenido_sobremi .grid_sobremi .imagen2, .contenido_sobremi .grid_sobremi .imagen3, .contenido_sobremi .grid_sobremi2 .imagen4, .contenido_sobremi .grid_sobremi2 .imagen5, .contenido_sobremi .grid_sobremi2 .imagen6 {
     background-size: cover;
     background-position: top;
     min-height: 50vh; }
-  .grid_sobremi .imagen2 {
-    grid-area: foto2;
-    background-image: url(../../img/lassojoven.jpg);
-    background-size: cover;
-    background-position: top;
-    min-height: 50vh; }
-  .grid_sobremi .imagen3 {
-    grid-area: foto3;
-    background-image: url(../../img/ojos2.jpg);
-    background-size: cover;
-    background-position: top;
-    min-height: 50vh; }
-  .grid_sobremi .texto1 {
-    grid-area: texto1; }
-  .grid_sobremi .texto2 {
-    grid-area: texto2; }
-  .grid_sobremi .texto3 {
-    grid-area: texto3; }
-
-.grid_sobremi2 {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "foto4 foto4 texto3" "foto5 texto4 foto6";
-  padding: 20px 60px;
-  gap: 20px;
-  align-items: stretch; }
-  .grid_sobremi2 .imagen4 {
-    grid-area: foto4;
-    background-image: url(../../img/colab.jpg);
-    background-size: cover;
-    background-position: top;
-    min-height: 50vh; }
-  .grid_sobremi2 .imagen5 {
-    grid-area: foto5;
-    background-image: url(../../img/cantante2.jpg);
-    background-size: cover;
-    background-position: top;
-    min-height: 50vh; }
-  .grid_sobremi2 .imagen6 {
-    grid-area: foto6;
-    background-image: url(../../img/letras.jpg);
-    background-size: cover;
-    background-position: top;
-    min-height: 50vh; }
-  .grid_sobremi2 .texto3 {
-    grid-area: texto3; }
-  .grid_sobremi2 .texto3 {
-    grid-area: texto4; }
-
-.fondoimagen {
-  background-image: url(../../img/fondo3.jpg);
-  background-size: cover;
-  background-position: center; }
-
-.contenidopresentacion .proximasfechas {
-  text-align: center; }
-  .contenidopresentacion .proximasfechas .itemfecha td, .contenidopresentacion .proximasfechas .itemfecha th {
-    padding: 30px;
-    color: #23395b;
-    font-size: 20px; }
-    .contenidopresentacion .proximasfechas .itemfecha td .ocultar, .contenidopresentacion .proximasfechas .itemfecha th .ocultar {
-      color: transparent;
-      background-color: transparent;
-      padding: 20px;
-      border-radius: 10px; }
-    .contenidopresentacion .proximasfechas .itemfecha td .ocultar:hover, .contenidopresentacion .proximasfechas .itemfecha th .ocultar:hover {
+  .contenido_sobremi .grid_sobremi {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 20px 60px;
+    gap: 20px;
+    align-items: stretch;
+    grid-template-areas: "foto1 foto1 texto1" "foto2 texto2 foto3"; }
+    .contenido_sobremi .grid_sobremi .imagen1 {
+      grid-area: foto1;
+      background-image: url(../../img/lassocami.png); }
+    .contenido_sobremi .grid_sobremi .imagen2 {
+      grid-area: foto2;
+      background-image: url(../../img/lassojoven.jpg); }
+    .contenido_sobremi .grid_sobremi .imagen3 {
+      grid-area: foto3;
+      background-image: url(../../img/ojos2.jpg); }
+    .contenido_sobremi .grid_sobremi .texto1 {
+      grid-area: texto1; }
+    .contenido_sobremi .grid_sobremi .texto2 {
+      grid-area: texto2; }
+    .contenido_sobremi .grid_sobremi .texto3 {
+      grid-area: texto3; }
+    .contenido_sobremi .grid_sobremi .tarjeta {
+      background-color: #3d9175;
       color: white;
-      background-color: #3d9175; }
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      text-align: center; }
+  .contenido_sobremi .grid_sobremi2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 20px 60px;
+    gap: 20px;
+    align-items: stretch;
+    grid-template-areas: "foto4 foto4 texto3" "foto5 texto4 foto6"; }
+    .contenido_sobremi .grid_sobremi2 .imagen4 {
+      grid-area: foto4;
+      background-image: url(../../img/colab.jpg); }
+    .contenido_sobremi .grid_sobremi2 .imagen5 {
+      grid-area: foto5;
+      background-image: url(../../img/cantante2.jpg); }
+    .contenido_sobremi .grid_sobremi2 .imagen6 {
+      grid-area: foto6;
+      background-image: url(../../img/letras.jpg); }
+    .contenido_sobremi .grid_sobremi2 .texto3 {
+      grid-area: texto3; }
+    .contenido_sobremi .grid_sobremi2 .texto4 {
+      grid-area: texto4; }
+    .contenido_sobremi .grid_sobremi2 .tarjeta {
+      background-color: #3d9175;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      text-align: center; }
 
-.video-youtube {
-  width: 100%;
-  aspect-ratio: 16/9; }
+.contenido {
+  background-image: url(../../img/fondo4.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .contenido .contenidopresentacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    .contenido .contenidopresentacion .proximasfechas {
+      text-align: center;
+      background-color: #3d9175;
+      color: white; }
+      .contenido .contenidopresentacion .proximasfechas .itemfecha td, .contenido .contenidopresentacion .proximasfechas .itemfecha th {
+        padding: 30px;
+        font-size: 20px; }
 
 footer {
   background-color: #ca054d;
@@ -274,18 +298,23 @@ footer {
   justify-content: center;
   align-items: center; }
 
-form {
+.contenido_contacto {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
-
-.tarjetita {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10px;
-  padding: 10px; }
+  align-items: center;
+  background-color: #FFCF9C;
+  color: #23395b; }
+  .contenido_contacto div div form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: stretch;
+    padding: 10px 30px; }
+  .contenido_contacto div div .video-youtube {
+    width: 100%;
+    aspect-ratio: 16/9; }
 
 .fade-in-fwd {
   -webkit-animation: fade-in-fwd 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
@@ -321,49 +350,26 @@ form {
   .slide-in-fwd-right {
     -webkit-animation: none;
     animation: none; }
-  .grid_sobremi {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "foto1 texto1" "foto3 foto3" "foto2 texto2";
-    padding: 20px 10px;
+  .contenido_sobremi .grid_sobremi, .contenido_sobremi .grid_sobremi2 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
     gap: 20px; }
-  .grid_sobremi2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "foto4 texto4" "foto5 foto5" "foto6 texto6";
-    padding: 20px 10px;
-    gap: 20px; }
-  .fotoprincipal {
+  main .fotoprincipal {
     height: 60vh; }
-    .fotoprincipal .fototitulo {
-      font-size: 50px; } }
+    main .fotoprincipal .fototitulo {
+      font-size: 50px; }
+  .contenido .contenidopresentacion {
+    display: flex;
+    padding: 20px 0; } }
 
 @media screen and (max-width: 768px) {
   .slide-in-fwd-right {
     -webkit-animation: none;
     animation: none; }
-  .grid_sobremi {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "foto1" "texto1" "foto2" "texto2" "foto3";
-    padding: 20px 10px;
-    gap: 20px; }
-  .grid_sobremi2 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "foto4" "texto4" "foto5" "texto5" "foto6";
-    padding: 20px 10px;
-    gap: 20px; }
-  .contenidopresentacion {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 30px 0;
-    gap: 20px; }
-  .fotoprincipal .fototitulo {
+  .contenido .contenidopresentacion .proximasfechas .itemfecha td, .contenido .contenidopresentacion .proximasfechas .itemfecha th {
+    padding: 10px;
+    font-size: 12px; }
+  main .fotoprincipal .fototitulo {
     font-size: 50px;
     color: white; } }

@@ -1,86 +1,95 @@
-.grid_sobremi {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "foto1 foto1 texto1"
-    "foto2 texto2 foto3";
-    padding: 20px 60px;
-    gap: 20px;
-    align-items: stretch;
-    .imagen1 {
-        grid-area: foto1;
-        background-image: url(../../img/lassocami.png);
-        background-size: cover;
-        background-position: top;
-        min-height: 50vh;
-    }
-    .imagen2 {
-        grid-area: foto2;
-        background-image: url(../../img/lassojoven.jpg);
-        background-size: cover;
-        background-position: top;
-        min-height: 50vh;
-    }
-    .imagen3 {
-        grid-area: foto3;
-        background-image: url(../../img/ojos2.jpg);
-        background-size: cover;
-        background-position: top;
-        min-height: 50vh;
-    }
-    .texto1 {
-        grid-area: texto1;
-    }
-    .texto2 {
-        grid-area: texto2;
-    }
-    .texto3 {
-        grid-area: texto3;
-    }
-}
-.grid_sobremi2 {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "foto4 foto4 texto3"
-    "foto5 texto4 foto6";
-    padding: 20px 60px;
-    gap: 20px;
-    align-items: stretch;
+.contenido_sobremi {
+    @include flex-col-center;
+    @include estilo_claro;
     
-    .imagen4 {
-        grid-area: foto4;
-        background-image: url(../../img/colab.jpg);
+    p {
+        @extend %textos;
+    }
+
+    h2 {
+        @extend %titulos;
+    }
+  
+    %imagen {
         background-size: cover;
         background-position: top;
         min-height: 50vh;
     }
-    .imagen5 {
-        grid-area: foto5;
-        background-image: url(../../img/cantante2.jpg);
-        background-size: cover;
-        background-position: top;
-        min-height: 50vh;
+    .grid_sobremi {
+        
+        @include grid-sobremi;
+        grid-template-areas: 
+        "foto1 foto1 texto1"
+        "foto2 texto2 foto3";
+        
+        .imagen1 {
+            grid-area: foto1;
+            background-image: url(../../img/lassocami.png);
+            @extend %imagen;
+        }
+        .imagen2 {
+            grid-area: foto2;
+            background-image: url(../../img/lassojoven.jpg);
+            @extend %imagen;
+        }
+        .imagen3 {
+            grid-area: foto3;
+            background-image: url(../../img/ojos2.jpg);
+            @extend %imagen;
+        }
+        .texto1 {
+            grid-area: texto1;
+        }
+        .texto2 {
+            grid-area: texto2;
+        }
+        .texto3 {
+            grid-area: texto3;
+        }
+        .tarjeta {
+            @include estilo_oscuro;
+            @include flex-col-center;
+            padding: 20px;
+            text-align: center;
+        }
     }
-    .imagen6 {
-        grid-area: foto6;
-        background-image: url(../../img/letras.jpg);
-        background-size: cover;
-        background-position: top;
-        min-height: 50vh;
+    .grid_sobremi2 {
+        @include grid-sobremi;
+        grid-template-areas: 
+        "foto4 foto4 texto3"
+        "foto5 texto4 foto6";
+        
+        
+        .imagen4 {
+            grid-area: foto4;
+            background-image: url(../../img/colab.jpg);
+            @extend %imagen;
+        }
+        .imagen5 {
+            grid-area: foto5;
+            background-image: url(../../img/cantante2.jpg);
+            @extend %imagen;
+
+        }
+        .imagen6 {
+            grid-area: foto6;
+            background-image: url(../../img/letras.jpg);
+            @extend %imagen;
+
+        }
+       
+        .texto3 {
+            grid-area: texto3;
+        }
+        .texto4 {
+            grid-area: texto4;
+        }
+        .tarjeta {
+            @include estilo_oscuro;
+            @include flex-col-center;
+            padding: 20px;
+            text-align: center;
+        }
     }
-    
-    .texto3 {
-        grid-area: texto3;
-    }
-    .texto3 {
-        grid-area: texto4;
-    }
+
 }
-
-
-

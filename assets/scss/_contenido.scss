@@ -1,19 +1,36 @@
-.contenido {
-    padding: 10px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    // align-items: stretch;
-    text-align: center;
-    gap: 10px;
+.contenido_index {   
+  @include flex-col-center;
+  @include estilo_oscuro;
+  padding: 20px;
+  gap: 10px;
+    
+    .titulo_index{
+      @extend %titulos;
+    }
 }
+
+.contenido_discos {
+  @include flex-col-center;
+  @include estilo_claro;
+  
+  .texto {
+    @extend %textos;
+  }
+  
+  h2 {
+    @extend %titulos;
+  }
+
+}
+
+
 .fondo_claro {
     background-color: $color_fondo_claro; 
     color:  $color_fondo_oscuro;
 }
 .fondo_oscuro {
-    background-color: rgb(61, 145, 117); 
-    color: white;
+  background-color: $color_principal; 
+  color: $color_letras; 
 }
 
 

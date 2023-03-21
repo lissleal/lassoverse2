@@ -1,14 +1,34 @@
-form {
+.contenido_contacto {
   @include flex-col-center;
+  @include estilo_claro;
+
+  p {
+    @extend %textos;
+
+  }
+
+  h2 {
+    @extend %titulos;
+  }
+
+  div {
+
+    div {
+      form {
+        @include flex-col-center;
+        align-items: stretch;
+        padding: 10px 30px;
+      }
+    }
+    div {   
+      .video-youtube {
+      width: 100%;
+      aspect-ratio: 16/9;
+      }
+    }
+  }
 }
 
-.tarjetita {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10px;
-  padding: 10px;
-}
 
 
 // EFECTO EN DISCOGRAFIA

@@ -27,7 +27,6 @@
     />
     <!-- CSS -->
     <link rel="stylesheet" href="../assets/css/main.css" />
-    <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
 
   <body>
@@ -40,7 +39,7 @@
             src="../img/logo.webp"
             height="50px"
             alt="Logo"
-              class="d-inline-block align-text-center slide-in-fwd-left"
+              class="d-inline-block slide-in-fwd-left"
             />
           </a>
           <button
@@ -90,75 +89,77 @@
     </div>
 
     <!-- Contenido -->
-    <main class="contenido fondo_claro">
-      <p class="container mt-3">
+    <main class="contenido_contacto">
+      <p>
         Comunicate con nuestro equipo de manera fácil y rápida. Ya sea para
         contrataciones, preguntas, sugerencias o cualquier otra consulta,
         estamos aquí para escucharte.
       </p>
       <h2> Formulario de Contacto</h2>
-      <div class="row">
-        <form class="col-lg-6 col-md-12 fondo_oscuro">
-          <div class="mb-2 mt-2">
-            <label for="exampleFormControlInput1" class="form-label"
-              >Nombre</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              id="exampleFormControlInput1"
-              placeholder="Ingresa tu nombre"
-            />
-          </div>
-          <div class="mb-2">
-            <label for="exampleFormControlInput2" class="form-label"
-              >Correo Electrónico</label
-            >
-            <input
-              type="email"
-              class="form-control mb-2"
-              id="exampleFormControlInput2"
-              placeholder="name@example.com"
-            />
-          </div>
-          <div class="input-group mb-2">
-            <label class="input-group-text" for="inputGroupSelect01"
-              >Motivo del Mensaje</label
-            >
-            <select class="form-select" id="inputGroupSelect01">
-              <option selected>Selecciona</option>
-              <option value="1">Reserva de Concierto</option>
-              <option value="2">Colaboración</option>
-              <option value="3">Pregunta General</option>
-            </select>
-          </div>
-          <div class="mb-2">
-            <label for="exampleFormControlTextarea1" class="form-label"
-              >En que podemos ayudarte</label
-            >
-            <textarea
-              class="form-control"
-              id="exampleFormControlTextarea1"
-              rows="2"
-              placeholder="Tu mensaje aqui"
-            ></textarea>
-          </div>
-
-          <div class="form-check mb-2 d-flex justify-content-center gap-2">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              value=""
-              id="defaultCheck1"
-            />
-            <label class="form-check-label" for="defaultCheck1">
-              Quiero suscribirme al boletín
-            </label>
-          </div>
-
-          <button type="submit" class="btn btn-light mb-3">Submit</button>
-        </form>
-        <div class="col-lg-6 col-md-12 mt-3">
+      <div class="container row my-4 gap-3">
+        <div class="col-lg-6 col-md-12">
+          <form class=" fondo_oscuro">
+            <div class="mb-2 mt-2">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Nombre</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Ingresa tu nombre"
+              />
+            </div>
+            <div class="mb-2">
+              <label for="exampleFormControlInput2" class="form-label"
+                >Correo Electrónico</label
+              >
+              <input
+                type="email"
+                class="form-control mb-2"
+                id="exampleFormControlInput2"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="input-group mb-2">
+              <label class="input-group-text" for="inputGroupSelect01"
+                >Motivo del Mensaje</label
+              >
+              <select class="form-select" id="inputGroupSelect01">
+                <option selected>Selecciona</option>
+                <option value="1">Reserva de Concierto</option>
+                <option value="2">Colaboración</option>
+                <option value="3">Pregunta General</option>
+              </select>
+            </div>
+            <div class="mb-2">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >En que podemos ayudarte</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="2"
+                placeholder="Tu mensaje aqui"
+              ></textarea>
+            </div>
+  
+            <div class="form-check mb-2 d-flex justify-content-center gap-2">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="defaultCheck1"
+              />
+              <label class="form-check-label" for="defaultCheck1">
+                Quiero suscribirme al boletín
+              </label>
+            </div>
+  
+            <button type="submit" class="btn btn-light mb-3">Submit</button>
+          </form>
+        </div>        
+        <div class="col-lg-6 col-md-12">
           <iframe
             class="video-youtube"
             src="https://www.youtube.com/embed/BWZsP6nc8Fs"

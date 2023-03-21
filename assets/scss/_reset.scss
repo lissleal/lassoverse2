@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&display=swap');
 
+$color_fondo_claro: #FFCF9C;
+$color_fondo_terceario:  #B96D40;
+$color_letras: white;
+$color_fondo_oscuro: rgb(35,57,91);
+$color_principal: rgb(61, 145, 117);
+$color_secundario: #ca054d;
+
 * {
     margin: 0;
     padding: 0;
@@ -23,14 +30,41 @@ a {
     justify-content: center;
     align-items: center;
 }
+@mixin grid-sobremi {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 20px 60px;
+    gap: 20px;
+    align-items: stretch;
+}
+@mixin gridsimple {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+@mixin estilo_oscuro {
+    background-color: $color_principal; 
+    color: $color_letras; 
+}
+@mixin estilo_claro {
+    background-color: $color_fondo_claro; 
+    color:  $color_fondo_oscuro;
+}
+
+%titulos {
+    color: $color_principal;
+    background-color: $color_letras;
+    padding: 0 10px;
+}
+
+%textos {
+    padding: 20px 50px;
+    text-align: center;
+
+}
 
 
 
 
-$color_fondo_claro: #FFCF9C;
-$color_fondo_terceario:  #B96D40;
-$color_letras: white;
-$color_fondo_oscuro: rgb(35,57,91);
-$color_principal: rgb(61, 145, 117);
-$color_secundario: #ca054d;
 
