@@ -17,20 +17,36 @@
 
     .proximasfechas {
         text-align: center;
-        @include estilo_oscuro;
-
+          
+        .itemtitulo {
+          @include estilo_claro;
+          th {
+            padding: 20px;
+            font-size: 20px;               
+          }  
+        }
         
       .itemfecha {
         
-            td, th {
-              padding: 30px;
-              font-size: 20px;
-                
-          }
-        }
+            td {
+              padding: 20px;
+              font-size: 15px;
+              font-weight: bold;               
+            }  
+            .fondo {
+                font-size: 15px;
+                background-color: $color_fondo_claro;
+                padding: 5px 20px;
+                border-radius: 10px;
+                color: $color_fondo_oscuro;
+                &:hover {
+                background-color: $color_principal;
+                color: $color_letras;
+                }
+              }   
       }
     }
-
+  }
 }
 
 

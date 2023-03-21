@@ -1,8 +1,25 @@
 .menu_principal {
     background-color: $color_fondo_terceario;
-    a {
-        color: $color_letras;
-    }
+    .nav-item {
+            background-color: $color_letras;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 5px; 
+          &:hover {
+            background-color: $color_principal;
+            padding: 10px;
+            border-radius: 10px;
+            color: $color_letras;
+
+          }
+            .nav-link {
+              color: $color_principal;
+              font-weight: bold;
+              &:hover {
+                color: $color_letras;
+            }
+  }
+}
 }
 
 // EFECTO EN LADO IZQUIERDO

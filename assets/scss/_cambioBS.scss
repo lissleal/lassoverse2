@@ -67,7 +67,7 @@
   
 .agrandarse {
 transition: 1s;
-}
-.agrandarse:hover {
-    scale: 1.05;
+  &:hover {
+      scale: 1.05;
+  }
 }
