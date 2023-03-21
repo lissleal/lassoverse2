@@ -38,6 +38,17 @@
 
 
 @media screen and (max-width: 768px){
+
+    %titulos {
+       
+        padding: 0 10px;
+        font-size: 20px;
+    }
+    
+    %textos {
+        padding: 20px 50px;
+        font-size: 15px;
+    }
     
     .slide-in-fwd-right {
         -webkit-animation: none;
@@ -50,12 +61,22 @@
                 
                 .proximasfechas {
                     
+                    .itemtitulo {
+                        th {
+                            padding: 10px;
+                            font-size: 15px;
+                            }
+                    }
                     .itemfecha {
-        
-                        td, th {
-                        padding: 10px;
+                        
+                        td {
+                        padding: 5px;
                         font-size: 12px;
-                            
+                            .fondo {
+                                font-size: 12px;
+                                padding: 3px;
+ 
+                            }
                         }
                     }    
                 }
@@ -69,7 +90,6 @@
 
             .fototitulo{
                 font-size: 50px;
-                color: $color_letras;
             } 
         }
     }

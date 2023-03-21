@@ -12,11 +12,13 @@ a {
 .contenido_index .titulo_index, .contenido_discos h2, .contenido_sobremi h2, .contenido h2, .contenido_contacto h2 {
   color: #3d9175;
   background-color: white;
-  padding: 0 10px; }
+  padding: 0 10px;
+  font-size: 30px; }
 
 .contenido_discos .texto, .contenido_sobremi p, .contenido .texto, .contenido_contacto p {
   padding: 20px 50px;
-  text-align: center; }
+  text-align: center;
+  font-size: 20px; }
 
 .menu_principal {
   background-color: #B96D40; }
@@ -30,6 +32,10 @@ a {
       padding: 10px;
       border-radius: 10px;
       color: white; }
+      .menu_principal .nav-item:hover .nav-link {
+        color: #3d9175;
+        font-weight: bold;
+        color: white; }
     .menu_principal .nav-item .nav-link {
       color: #3d9175;
       font-weight: bold; }
@@ -136,14 +142,6 @@ a {
   align-items: center;
   background-color: #FFCF9C;
   color: #23395b; }
-
-.fondo_claro {
-  background-color: #FFCF9C;
-  color: #23395b; }
-
-.fondo_oscuro {
-  background-color: #3d9175;
-  color: white; }
 
 .vibrate-1 {
   -webkit-animation: vibrate-1 2s linear infinite both;
@@ -336,6 +334,8 @@ footer {
   background-color: #FFCF9C;
   color: #23395b; }
   .contenido_contacto div div form {
+    background-color: #3d9175;
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -393,14 +393,25 @@ footer {
     padding: 20px 0; } }
 
 @media screen and (max-width: 768px) {
+  .contenido_index .titulo_index, .contenido_discos h2, .contenido_sobremi h2, .contenido h2, .contenido_contacto h2 {
+    padding: 0 10px;
+    font-size: 20px; }
+  .contenido_discos .texto, .contenido_sobremi p, .contenido .texto, .contenido_contacto p {
+    padding: 20px 50px;
+    font-size: 15px; }
   .slide-in-fwd-right {
     -webkit-animation: none;
     animation: none; }
-  .contenido .contenidopresentacion .proximasfechas .itemfecha td, .contenido .contenidopresentacion .proximasfechas .itemfecha th {
+  .contenido .contenidopresentacion .proximasfechas .itemtitulo th {
     padding: 10px;
+    font-size: 15px; }
+  .contenido .contenidopresentacion .proximasfechas .itemfecha td {
+    padding: 5px;
     font-size: 12px; }
+    .contenido .contenidopresentacion .proximasfechas .itemfecha td .fondo {
+      font-size: 12px;
+      padding: 3px; }
   main .fotoprincipal .fototitulo {
-    font-size: 50px;
-    color: white; }
+    font-size: 50px; }
   .contenido_contacto .container {
     gap: 20px; } }

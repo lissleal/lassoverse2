@@ -15,6 +15,7 @@
 
     div {
       form {
+        @include estilo_oscuro;
         @include flex-col-center;
         align-items: stretch;
         padding: 10px 30px;
@@ -62,9 +63,8 @@
       opacity: 1;
     }
   }
-  
 
-  
+// ANIMACION AGRANDAR ELEMENTOS USADO EN DISCOGRAFIA Y LOGO DE NAVBAR
 .agrandarse {
 transition: 1s;
   &:hover {

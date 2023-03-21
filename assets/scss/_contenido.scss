@@ -23,18 +23,6 @@
 
 }
 
-
-.fondo_claro {
-    background-color: $color_fondo_claro; 
-    color:  $color_fondo_oscuro;
-}
-.fondo_oscuro {
-  background-color: $color_principal; 
-  color: $color_letras; 
-}
-
-
-
 // ANIMACION RESALTAR CONTENIDO
 .vibrate-1 {
 	-webkit-animation: vibrate-1 2s linear infinite both;
