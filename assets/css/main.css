@@ -11,7 +11,7 @@ a {
   color: white; }
 
 .contenido_index .titulo_index, .contenido_discos h2, .contenido_sobremi h2, .contenido h2, .contenido_contacto h2 {
-  color: #3d9175;
+  color: #1e674f;
   background-color: white;
   padding: 0 10px;
   font-size: 30px; }
@@ -28,16 +28,16 @@ a {
     border-radius: 10px;
     margin: 5px; }
     .menu_principal .nav-item:hover {
-      background-color: #3d9175;
+      background-color: #1e674f;
       padding: 10px;
       border-radius: 10px;
       color: white; }
       .menu_principal .nav-item:hover .nav-link {
-        color: #3d9175;
+        color: #1e674f;
         font-weight: bold;
         color: white; }
     .menu_principal .nav-item .nav-link {
-      color: #3d9175;
+      color: #1e674f;
       font-weight: bold; }
       .menu_principal .nav-item .nav-link:hover {
         color: white; }
@@ -130,7 +130,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #3d9175;
+  background-color: #1e674f;
   color: white;
   padding: 20px;
   gap: 10px; }
@@ -245,7 +245,7 @@ a {
     .contenido_sobremi .grid_sobremi .texto3 {
       grid-area: texto3; }
     .contenido_sobremi .grid_sobremi .tarjeta {
-      background-color: #3d9175;
+      background-color: #1e674f;
       color: white;
       display: flex;
       flex-direction: column;
@@ -276,7 +276,7 @@ a {
     .contenido_sobremi .grid_sobremi2 .texto5 {
       grid-area: texto4; }
     .contenido_sobremi .grid_sobremi2 .tarjeta {
-      background-color: #3d9175;
+      background-color: #1e674f;
       color: white;
       display: flex;
       flex-direction: column;
@@ -314,7 +314,7 @@ a {
         border-radius: 10px;
         color: #23395b; }
         .contenido .contenidopresentacion .proximasfechas .itemfecha .fondo:hover {
-          background-color: #3d9175;
+          background-color: #1e674f;
           color: white; }
 
 footer {
@@ -334,7 +334,7 @@ footer {
   background-color: #FFCF9C;
   color: #23395b; }
   .contenido_contacto div div form {
-    background-color: #3d9175;
+    background-color: #1e674f;
     color: white;
     display: flex;
     flex-direction: column;
