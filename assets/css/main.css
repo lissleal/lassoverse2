@@ -3,7 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Comfortaa', Courier, monospace; }
+  font-family: 'Comfortaa', Courier, monospace;
+  text-align: center; }
 
 a {
   text-decoration: none;
@@ -271,9 +272,9 @@ a {
     .contenido_sobremi .grid_sobremi2 .imagen6 {
       grid-area: foto6;
       background-image: url(../../img/letras.jpg); }
-    .contenido_sobremi .grid_sobremi2 .texto3 {
-      grid-area: texto3; }
     .contenido_sobremi .grid_sobremi2 .texto4 {
+      grid-area: texto3; }
+    .contenido_sobremi .grid_sobremi2 .texto5 {
       grid-area: texto4; }
     .contenido_sobremi .grid_sobremi2 .tarjeta {
       background-color: #3d9175;
@@ -414,4 +415,6 @@ footer {
   main .fotoprincipal .fototitulo {
     font-size: 50px; }
   .contenido_contacto .container {
-    gap: 20px; } }
+    gap: 20px; }
+  img {
+    width: 100%; } }
