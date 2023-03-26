@@ -3,13 +3,22 @@
     @include estilo_claro;
     
     p {
-        @extend %textos;
+        @extend %textos;   
+    }
+    .sobremi__texto {
+        padding: 10px;
+        font-size: 15px;    
     }
 
     h2 {
         @extend %titulos;
     }
-  
+
+    h3 {
+        padding-top: 15px;
+        font-size: 20px;    
+    }
+
     %imagen {
         background-size: cover;
         background-position: top;
@@ -49,7 +58,7 @@
         .tarjeta {
             @include estilo_oscuro;
             @include flex-col-center;
-            padding: 20px;
+            // padding: 20px;
             text-align: center;
         }
     }

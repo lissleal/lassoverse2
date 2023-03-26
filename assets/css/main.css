@@ -13,7 +13,7 @@ a {
 .contenido_index .titulo_index, .contenido_discos h2, .contenido_sobremi h2, .contenido h2, .contenido_contacto h2 {
   color: #1e674f;
   background-color: white;
-  padding: 0 10px;
+  padding: 10px;
   font-size: 30px; }
 
 .contenido_discos .texto, .contenido_sobremi p, .contenido .texto, .contenido_contacto p {
@@ -216,6 +216,12 @@ a {
   align-items: center;
   background-color: #FFCF9C;
   color: #23395b; }
+  .contenido_sobremi .sobremi__texto {
+    padding: 10px;
+    font-size: 15px; }
+  .contenido_sobremi h3 {
+    padding-top: 15px;
+    font-size: 20px; }
   .contenido_sobremi .grid_sobremi .imagen1, .contenido_sobremi .grid_sobremi .imagen2, .contenido_sobremi .grid_sobremi .imagen3, .contenido_sobremi .grid_sobremi2 .imagen4, .contenido_sobremi .grid_sobremi2 .imagen5, .contenido_sobremi .grid_sobremi2 .imagen6 {
     background-size: cover;
     background-position: top;
@@ -251,7 +257,6 @@ a {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 20px;
       text-align: center; }
   .contenido_sobremi .grid_sobremi2 {
     width: 100%;
