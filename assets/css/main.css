@@ -188,7 +188,7 @@ a {
     transform: translate(0); } }
 
 .fotoprincipal {
-  background-image: url(../../img/portada.jpg);
+  background-image: url(../../img/portadamed.jpg);
   background-size: cover;
   background-position: center top;
   display: flex;
@@ -397,11 +397,11 @@ footer {
 
 @media screen and (max-width: 768px) {
   .contenido_index .titulo_index, .contenido_discos h2, .contenido_sobremi h2, .contenido h2, .contenido_contacto h2 {
-    padding: 0 10px;
-    font-size: 20px; }
+    padding: 3px 5px;
+    font-size: 18px; }
   .contenido_discos .texto, .contenido_sobremi p, .contenido .texto, .contenido_contacto p {
     padding: 20px 50px;
-    font-size: 15px; }
+    font-size: 12px; }
   .slide-in-fwd-right {
     -webkit-animation: none;
     animation: none; }
@@ -414,10 +414,8 @@ footer {
     .contenido .contenidopresentacion .proximasfechas .itemfecha td .fondo {
       font-size: 12px;
       padding: 3px; }
-  main .fotoprincipal {
-    background-image: url(../../img/portadamovil.jpg); }
-    main .fotoprincipal .fototitulo {
-      font-size: 50px; }
+  main .fotoprincipal .fototitulo {
+    font-size: 30px; }
   .contenido_contacto .container {
     gap: 20px; }
   img {
