@@ -221,7 +221,7 @@ a {
     font-size: 15px; }
   .contenido_sobremi h3 {
     padding-top: 15px;
-    font-size: 20px; }
+    font-size: 15px; }
   .contenido_sobremi .grid_sobremi .imagen1, .contenido_sobremi .grid_sobremi .imagen2, .contenido_sobremi .grid_sobremi .imagen3, .contenido_sobremi .grid_sobremi2 .imagen4, .contenido_sobremi .grid_sobremi2 .imagen5, .contenido_sobremi .grid_sobremi2 .imagen6 {
     background-size: cover;
     background-position: top;
@@ -237,7 +237,7 @@ a {
     grid-template-areas: "foto1 foto1 texto1" "foto2 texto2 foto3"; }
     .contenido_sobremi .grid_sobremi .imagen1 {
       grid-area: foto1;
-      background-image: url(../../img/lassocami.png); }
+      background-image: url(../../img/lassocami.jpg); }
     .contenido_sobremi .grid_sobremi .imagen2 {
       grid-area: foto2;
       background-image: url(../../img/lassojoven.jpg); }
@@ -406,7 +406,7 @@ footer {
     font-size: 18px; }
   .contenido_discos .texto, .contenido_sobremi p, .contenido .texto, .contenido_contacto p {
     padding: 20px 50px;
-    font-size: 12px; }
+    font-size: 18px; }
   .slide-in-fwd-right {
     -webkit-animation: none;
     animation: none; }
@@ -424,4 +424,7 @@ footer {
   .contenido_contacto .container {
     gap: 20px; }
   img {
-    width: 100%; } }
+    width: 100%; }
+  .contenido_sobremi .sobremi__texto {
+    padding: 10px;
+    font-size: 12px; } }

@@ -12,6 +12,7 @@
             flex-direction: column;        
             padding: 20px 40px;
             gap: 20px;
+            
         }            
     }
     // INDEX
@@ -40,14 +41,13 @@
 @media screen and (max-width: 768px){
 
     %titulos {
-       
         padding: 3px 5px;
         font-size: 18px;
     }
     
     %textos {
         padding: 20px 50px;
-        font-size: 12px;
+        font-size: 18px;
     }
     
     .slide-in-fwd-right {
@@ -75,7 +75,6 @@
                             .fondo {
                                 font-size: 12px;
                                 padding: 3px;
- 
                             }
                         }
                     }    
@@ -95,7 +94,7 @@
         }
     }
 
-    // CONTACTO
+// CONTACTO
     .contenido_contacto {
 
         .container {
@@ -107,5 +106,12 @@
     img {
         width: 100%;
     }
-}
+// SOBRE MI
+    .contenido_sobremi {
+        .sobremi__texto {
+            padding: 10px;
+            font-size: 12px;    
+        }
 
+    }
+}

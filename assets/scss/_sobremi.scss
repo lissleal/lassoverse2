@@ -16,7 +16,7 @@
 
     h3 {
         padding-top: 15px;
-        font-size: 20px;    
+        font-size: 15px;    
     }
 
     %imagen {
@@ -33,7 +33,7 @@
         
         .imagen1 {
             grid-area: foto1;
-            background-image: url(../../img/lassocami.png);
+            background-image: url(../../img/lassocami.jpg);
             @extend %imagen;
         }
         .imagen2 {
