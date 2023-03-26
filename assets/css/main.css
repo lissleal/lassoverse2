@@ -346,6 +346,9 @@ footer {
     width: 100%;
     aspect-ratio: 16/9; }
 
+.textodisco {
+  font-size: 14px; }
+
 .fade-in-fwd {
   -webkit-animation: fade-in-fwd 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
   animation: fade-in-fwd 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both; }
@@ -411,8 +414,10 @@ footer {
     .contenido .contenidopresentacion .proximasfechas .itemfecha td .fondo {
       font-size: 12px;
       padding: 3px; }
-  main .fotoprincipal .fototitulo {
-    font-size: 50px; }
+  main .fotoprincipal {
+    background-image: url(../../img/portadamovil.jpg); }
+    main .fotoprincipal .fototitulo {
+      font-size: 50px; }
   .contenido_contacto .container {
     gap: 20px; }
   img {
