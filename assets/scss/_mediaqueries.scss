@@ -33,6 +33,11 @@
         padding: 20px 0;
         }
     }
+    
+    
+}
+
+@media screen and (max-width: 992px){
     // CONTACTO
     .contenido_contacto {
 
@@ -40,10 +45,7 @@
             gap: 20px;
         }
     }
-    
 }
-
-
 
 @media screen and (max-width: 768px){
 
@@ -114,4 +116,5 @@
         }
 
     }
+    
 }
