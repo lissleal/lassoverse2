@@ -264,7 +264,7 @@ a {
     grid-template-areas: "foto4 foto4 texto3" "foto5 texto4 foto6"; }
     .contenido_sobremi .grid_sobremi2 .imagen4 {
       grid-area: foto4;
-      background-image: url(../../img/colab.jpg); }
+      background-image: url(../../img/latra3.jpg); }
     .contenido_sobremi .grid_sobremi2 .imagen5 {
       grid-area: foto5;
       background-image: url(../../img/cantante2.jpg); }
