@@ -371,11 +371,6 @@ footer {
   .slide-in-fwd-right {
     -webkit-animation: none;
     animation: none; }
-  .contenido_sobremi .grid_sobremi, .contenido_sobremi .grid_sobremi2 {
-    display: flex;
-    flex-direction: column;
-    padding: 20px 40px;
-    gap: 20px; }
   main .fotoprincipal {
     height: 60vh; }
     main .fotoprincipal .fototitulo {
@@ -411,6 +406,11 @@ footer {
     font-size: 30px; }
   img {
     width: 100%; }
-  .contenido_sobremi .sobremi__texto {
-    padding: 10px;
-    font-size: 12px; } }
+  .contenido_sobremi .grid_sobremi, .contenido_sobremi .grid_sobremi2 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    gap: 20px; }
+    .contenido_sobremi .grid_sobremi .sobremi__texto, .contenido_sobremi .grid_sobremi2 .sobremi__texto {
+      padding: 10px;
+      font-size: 12px; } }
