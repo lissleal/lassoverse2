@@ -204,10 +204,6 @@ a {
     font-size: 60px;
     color: #23395b;
     font-weight: bold; }
-  .fotoprincipal p {
-    background-color: white;
-    border-radius: 10px;
-    padding: 10px 20px; }
 
 .contenido_sobremi {
   display: flex;
@@ -216,16 +212,25 @@ a {
   align-items: center;
   background-color: #FFCF9C;
   color: #23395b; }
-  .contenido_sobremi .sobremi__texto {
-    padding: 10px;
-    font-size: 15px; }
   .contenido_sobremi h3 {
     padding-top: 15px;
     font-size: 15px; }
+  .contenido_sobremi .tarjeta {
+    background-color: #1e674f;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center; }
   .contenido_sobremi .grid_sobremi .imagen1, .contenido_sobremi .grid_sobremi .imagen2, .contenido_sobremi .grid_sobremi .imagen3, .contenido_sobremi .grid_sobremi2 .imagen4, .contenido_sobremi .grid_sobremi2 .imagen5, .contenido_sobremi .grid_sobremi2 .imagen6 {
     background-size: cover;
     background-position: top;
     min-height: 50vh; }
+  .contenido_sobremi .sobremi__texto {
+    padding: 10px;
+    font-size: 15px; }
   .contenido_sobremi .grid_sobremi {
     width: 100%;
     display: grid;
@@ -248,16 +253,6 @@ a {
       grid-area: texto1; }
     .contenido_sobremi .grid_sobremi .texto2 {
       grid-area: texto2; }
-    .contenido_sobremi .grid_sobremi .texto3 {
-      grid-area: texto3; }
-    .contenido_sobremi .grid_sobremi .tarjeta {
-      background-color: #1e674f;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center; }
   .contenido_sobremi .grid_sobremi2 {
     width: 100%;
     display: grid;
@@ -276,19 +271,10 @@ a {
     .contenido_sobremi .grid_sobremi2 .imagen6 {
       grid-area: foto6;
       background-image: url(../../img/letras.jpg); }
-    .contenido_sobremi .grid_sobremi2 .texto4 {
+    .contenido_sobremi .grid_sobremi2 .texto3 {
       grid-area: texto3; }
-    .contenido_sobremi .grid_sobremi2 .texto5 {
+    .contenido_sobremi .grid_sobremi2 .texto4 {
       grid-area: texto4; }
-    .contenido_sobremi .grid_sobremi2 .tarjeta {
-      background-color: #1e674f;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-      text-align: center; }
 
 .contenido {
   background-image: url(../../img/fondo4.jpg);
@@ -300,27 +286,25 @@ a {
   .contenido .contenidopresentacion {
     display: grid;
     grid-template-columns: 1fr 1fr; }
-    .contenido .contenidopresentacion .proximasfechas {
-      text-align: center; }
-      .contenido .contenidopresentacion .proximasfechas .itemtitulo {
-        background-color: #FFCF9C;
-        color: #23395b; }
-        .contenido .contenidopresentacion .proximasfechas .itemtitulo th {
-          padding: 20px;
-          font-size: 20px; }
-      .contenido .contenidopresentacion .proximasfechas .itemfecha td {
+    .contenido .contenidopresentacion .proximasfechas .itemtitulo {
+      background-color: #FFCF9C;
+      color: #23395b; }
+      .contenido .contenidopresentacion .proximasfechas .itemtitulo th {
         padding: 20px;
-        font-size: 15px;
-        font-weight: bold; }
-      .contenido .contenidopresentacion .proximasfechas .itemfecha .fondo {
-        font-size: 15px;
-        background-color: #FFCF9C;
-        padding: 5px 20px;
-        border-radius: 10px;
-        color: #23395b; }
-        .contenido .contenidopresentacion .proximasfechas .itemfecha .fondo:hover {
-          background-color: #1e674f;
-          color: white; }
+        font-size: 20px; }
+    .contenido .contenidopresentacion .proximasfechas .itemfecha td {
+      padding: 20px;
+      font-size: 15px;
+      font-weight: bold; }
+    .contenido .contenidopresentacion .proximasfechas .itemfecha .fondo {
+      font-size: 15px;
+      background-color: #FFCF9C;
+      padding: 5px 20px;
+      border-radius: 10px;
+      color: #23395b; }
+      .contenido .contenidopresentacion .proximasfechas .itemfecha .fondo:hover {
+        background-color: #1e674f;
+        color: white; }
 
 footer {
   background-color: #ca054d;
@@ -398,7 +382,9 @@ footer {
       font-size: 50px; }
   .contenido .contenidopresentacion {
     display: flex;
-    padding: 20px 0; } }
+    padding: 20px 0; }
+  .contenido_contacto .container {
+    gap: 20px; } }
 
 @media screen and (max-width: 768px) {
   .contenido_index .titulo_index, .contenido_discos h2, .contenido_sobremi h2, .contenido h2, .contenido_contacto h2 {
@@ -421,8 +407,6 @@ footer {
       padding: 3px; }
   main .fotoprincipal .fototitulo {
     font-size: 30px; }
-  .contenido_contacto .container {
-    gap: 20px; }
   img {
     width: 100%; }
   .contenido_sobremi .sobremi__texto {

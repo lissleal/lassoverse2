@@ -5,10 +5,6 @@
     p {
         @extend %textos;   
     }
-    .sobremi__texto {
-        padding: 10px;
-        font-size: 15px;    
-    }
 
     h2 {
         @extend %titulos;
@@ -19,10 +15,22 @@
         font-size: 15px;    
     }
 
+    .tarjeta {
+        @include estilo_oscuro;
+        @include flex-col-center;
+        padding: 20px;
+        text-align: center;
+    }
+
     %imagen {
         background-size: cover;
         background-position: top;
         min-height: 50vh;
+    }
+
+    .sobremi__texto {
+        padding: 10px;
+        font-size: 15px;    
     }
     .grid_sobremi {
         
@@ -52,15 +60,7 @@
         .texto2 {
             grid-area: texto2;
         }
-        .texto3 {
-            grid-area: texto3;
-        }
-        .tarjeta {
-            @include estilo_oscuro;
-            @include flex-col-center;
-            // padding: 20px;
-            text-align: center;
-        }
+        
     }
     .grid_sobremi2 {
         @include grid-sobremi;
@@ -87,18 +87,13 @@
 
         }
        
-        .texto4 {
+        .texto3 {
             grid-area: texto3;
         }
-        .texto5 {
+        .texto4 {
             grid-area: texto4;
         }
-        .tarjeta {
-            @include estilo_oscuro;
-            @include flex-col-center;
-            padding: 20px;
-            text-align: center;
-        }
+        
     }
 
 }

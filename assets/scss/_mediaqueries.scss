@@ -33,6 +33,13 @@
         padding: 20px 0;
         }
     }
+    // CONTACTO
+    .contenido_contacto {
+
+        .container {
+            gap: 20px;
+        }
+    }
     
 }
 
@@ -57,30 +64,30 @@
     // PRESENTACIONES
     .contenido {
 
-            .contenidopresentacion {
+        .contenidopresentacion {
+            
+            .proximasfechas {
                 
-                .proximasfechas {
-                    
-                    .itemtitulo {
-                        th {
-                            padding: 10px;
-                            font-size: 15px;
-                            }
-                    }
-                    .itemfecha {
-                        
-                        td {
-                        padding: 5px;
-                        font-size: 12px;
-                            .fondo {
-                                font-size: 12px;
-                                padding: 3px;
-                            }
+                .itemtitulo {
+                    th {
+                        padding: 10px;
+                        font-size: 15px;
                         }
-                    }    
                 }
+                .itemfecha {
+                    
+                    td {
+                    padding: 5px;
+                    font-size: 12px;
+                        .fondo {
+                            font-size: 12px;
+                            padding: 3px;
+                        }
+                    }
+                }    
             }
         }
+    }
 
 
 // INDEX
@@ -94,13 +101,6 @@
         }
     }
 
-// CONTACTO
-    .contenido_contacto {
-
-        .container {
-            gap: 20px;
-        }
-    }
 // DISCOGRAFIA
 
     img {
